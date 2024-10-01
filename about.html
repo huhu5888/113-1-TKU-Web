@@ -1,44 +1,87 @@
-<html></html>
-  <head>
-    <title>自我介紹</title>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
-    <h1>歡迎來到胡椒鹽的網站！</h1>
-    <h2>分享一下我自己</h2>
-    
-    <table>
-        <tr>
-          <th>名稱</th>
-          <th> - </th>
-          <th>年齡</th>
-        </tr>
-        <tr>
-          <td>胡允巖</td>
-          <td>-</td>
-          <td>21</td>
-        </tr>
-      </table>
+    <title>About YUN-YAN HU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <p>系級:資管四A</p>
-    <p>學號:410630437</p>
+<body>
+    <div id="app">
+        <header class="profile-header">
+            <h1>YUN-YAN HU</h1>
+            <h2>胡允巖</h2>
+            <h3>淡江大學資訊管理學系四年級</h3>
+            <p>大家好，我在寫作業!</p>
+        </header>
 
-    <h1>我的帥照</h1>
-    <img src="照片2.jpg" alt="照片">
-    <p>害羞啦！</p>
-  </body>
+        <section class="skills-section card">
+            <h4>技能</h4>
+            <ul>
+                <li>英文鑑定中級</li>
+            </ul>
+        </section>
 
-  <strong>興趣:</strong>
-<em>打球、睡覺、瘋狂進食</em>
+        <section class="contact-section card">
+            <h4>聯絡方式</h4>
+            <ul>
+                <li><strong>Email:</strong> null</li>
+            </ul>
+        </section>
 
-<h1>我最愛吃的東西:</h1>
-<ul>
-  <li>抹茶</li>
-  <li>牛排</li>
-  <li>生魚片</li>
-  <li>龍蝦</li>
-  <li>干貝</li>
-</ul>
+        <section class="experience-section card">
+            <h4>履歷</h4>
+            <ul>
+                <li><em>2022-2023</em>&nbsp;<strong>大學一年級</strong>
+                    <ol>
+                        <li>系籃</li>
+                        <li>系羽</li>
+                    </ol>
+                </li>
+                <li><em>2023-2024</em>&nbsp;<strong>大學二年級</strong>
+                    <ol>
+                        <li>淡江資管系學會/公關長</li>
+                        <li>開始愛上寫程式</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <section class="certification-section card">
+            <h4>證照</h4>
+            <div class="cert-item">
+                <h5>英檢</h5>
+                <img width="150" src="https://www.gept-english.com.tw/img/u_images/gept_banner_index.jpg">
+            </div>
+        </section>
+
+        <section class="cert-info-section card">
+            <h4>證照資訊</h4>
+            <table>
+                <tr>
+                    <th>證照名稱</th>
+                    <th>證照資訊</th>
+                </tr>
+                <tr>
+                    <td>英檢中級</td>
+                    <td><a href="https://www.gept.org.tw/Exam_Intro/t02_introduction.asp">檢視證照資訊</a></td>
+                </tr>
+               
+            </table>
+        </section>
+
+        <section class="comments-section card">
+            <h4>其他</h4>
+            <form action="/submit" method="post">
+                <label for="comment">發送留言:</label>
+                <input type="text" id="comment" name="comment" placeholder="輸入留言">
+                <input type="submit" value="提交">
+            </form>
+            <p><span class="highlight">留言功能暫不開放</span></p>
+        </section>
+    </div>
+</body>
 
 </html>
